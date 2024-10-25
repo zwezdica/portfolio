@@ -259,7 +259,6 @@ article#projects {
 .project {
   display: flex;
   align-items: center;
-  gap: 4%;
   width: 70vh;
   margin: 0 auto;
   background-color: #20002c;
@@ -271,7 +270,7 @@ article#projects {
 }
 
 .project img {
-  height: 200px;
+  width: 18vh;
   margin-right: 100px;
   margin-left: 70px;
   border-radius: 10px;
