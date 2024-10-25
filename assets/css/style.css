@@ -29,6 +29,7 @@ body {
 .navigation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #3e0b52;
   font-size: 1.5rem;
   position: sticky;
@@ -40,10 +41,9 @@ body {
 
 #nav-meni {
   display: flex;
-  justify-content: space-between;
-  padding: 0.75rem;
   }
   
+
 #nav-meni ul{
   display: flex;
   align-items: center;
@@ -53,6 +53,7 @@ body {
   #nav-meni ul li a {
     color: #b8a0c1;
     padding: 0.75rem;
+    text-decoration: none;
   }
   
   #nav-meni ul li a:hover {
@@ -61,12 +62,30 @@ body {
     border-radius: 5px;
   }
 
- ul a {text-decoration: none;
-}
-
 ul li {
   list-style: none; 
 }
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 20px;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+#menu-toggle {
+  display: none;
+}
+
 
 
 /* SHOWCASE */
@@ -245,6 +264,7 @@ article#skills {
 article#projects h2 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+  margin-bottom: 70px;
   font-size: 2em;
   text-align: center;
   color: #3e0b52;
@@ -259,7 +279,7 @@ article#projects {
 .project {
   display: flex;
   align-items: center;
-  width: 70vh;
+  width: 80vh;
   margin: 0 auto;
   background-color: #20002c;
   padding: 2rem;
@@ -270,7 +290,7 @@ article#projects {
 }
 
 .project img {
-  width: 18vh;
+  width: 50vh;
   margin-right: 100px;
   margin-left: 70px;
   border-radius: 10px;
@@ -281,7 +301,7 @@ article#projects {
   .dots {
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: -8%;
     transform: translate(-50%, 50px);
     display: flex;
     gap: 30px;
@@ -308,6 +328,8 @@ article#projects {
     display: flex;
     align-items: center;
     justify-content: space-between;
+     border: 5px solid #340f41;
+    border-radius: 4%;
     gap: 2rem;
     padding: 2rem;
    
@@ -319,14 +341,9 @@ article#projects {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-
-
-
-
-.forma-wrapper {
+  .forma-wrapper {
   background: linear-gradient(to right, #cbb4d4, #20002c);
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  
 }
 
 #forma {
@@ -342,34 +359,27 @@ article#projects {
 }
 
 
-.form-group {
-  display: inline;
-}
-  
+ 
 .form-group label,
 .form-group input {
-  width: 40%;
+ display: flex;
+ justify-content: center;
   margin-bottom: 3%;
   padding: 1.3rem 0;
   margin-right: 0.4rem;
-  text-align: center;
+  
 }
   
 
-.form-group,
 .form-group textarea {
   width: 100%;
-  display: block; 
-
-}
-  
-.form-group textarea {
-  width: 85%;
   padding-top: 1.4rem;
-  margin-left: 0.5rem;
-
 }
 
+.image-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
 
   
 .btn_send {
@@ -377,9 +387,8 @@ article#projects {
   color: #3e0b52;
   font-weight: bold;
   margin-top: 30px;
-  margin-left: 250px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   border: none;
   border-radius: 10%;
   padding: 0.5rem;
@@ -452,10 +461,7 @@ article#projects {
       gap: 80px;
   }
 
-  .project {
-      width: 50%;
-  }
-  
+ 
 }
 
 @media (max-width: 1200px) {
@@ -496,27 +502,29 @@ article#projects {
   }
 
 
-  .project {
-    width: 10%;
-    flex-direction: column;
-    gap: 20px;
+
+
 }
-}
-
-
-
 
 @media (max-width: 768px) {
-  
-  .navigation {
-      flex-direction: column;
-      align-items: center;
-  }
 
-  #nav-meni ul li a {
-      padding: 0.5rem;
-      font-size: 1.2rem;
-  }
+  .hamburger {
+    display: flex;
+}
+
+#nav-meni {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #3e0b52;
+}
+
+.menu-toggle:checked + .hamburger + #nav-meni {
+    display: flex;
+}
 
   .about {
       flex-direction: column;
@@ -526,6 +534,18 @@ article#projects {
   .about img {
       margin: 0 auto 20px;
       width: 10%;
+  }
+
+  .project {
+    flex-direction: column;
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .project img {
+    width: 70%; 
+    margin: 0 auto 1rem auto; 
+    transform: scale(1.2); 
   }
 
   .container {
@@ -553,20 +573,10 @@ article#projects {
 
 @media (max-width: 575px) {
   
-  .navigation {
-      flex-direction: column;
-      align-items: center;
-      padding: 1rem 0;
-  }
 
   .logo {
       font-size: 1.5rem;
       margin-top: 0.5rem;
-  }
-
-  #nav-meni ul {
-      flex-direction: column;
-      gap: 10px;
   }
 
   #showcase .showcase-content {
