@@ -560,6 +560,8 @@ article#projects {
   
   .hamburger {
     display: flex;
+    position: sticky;
+    z-index: 1;
 }
 
 #nav-meni {
