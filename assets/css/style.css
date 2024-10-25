@@ -557,20 +557,17 @@ article#projects {
 
 
 @media (max-width: 575px) {
-  
   .hamburger {
     display: flex;
-    /* position: sticky;
-    z-index: 1; */
-}
+  }
 
 #nav-meni {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 50%;
+    top: 100%;
     left: 0;
-    width: 50%;
+    width: 100%;
     background-color: #3e0b52;
 }
 
