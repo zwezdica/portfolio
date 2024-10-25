@@ -560,17 +560,17 @@ article#projects {
   
   .hamburger {
     display: flex;
-    position: sticky;
-    z-index: 1;
+    /* position: sticky;
+    z-index: 1; */
 }
 
 #nav-meni {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 100%;
+    top: 50%;
     left: 0;
-    width: 100%;
+    width: 50%;
     background-color: #3e0b52;
 }
 
