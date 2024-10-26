@@ -64,7 +64,6 @@ justify-content: center;
 
 ul li {
 list-style: none; 
-margin-bottom: 1.5rem;
 }
 
 .hamburger {
@@ -470,6 +469,9 @@ footer {
    
 }
 
+   ul li {
+  margin-bottom: 1.5rem;}
+
 
 #about_me {
   background: linear-gradient(to left, #5c3d69, #20002c);
@@ -523,7 +525,6 @@ footer {
  #nav-meni ul li a {
   margin-bottom: 20px;
  }
-
 
   .menu-toggle:checked + .hamburger + #nav-meni {
     display: flex;
