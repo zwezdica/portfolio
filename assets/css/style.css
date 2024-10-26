@@ -74,9 +74,9 @@ ul li {
 
 .hamburger span {
   display: block;
-  width: 20px;
+  width: 25px;
   height: 4px;
-  background-color: white;
+  background-color: #977aa2;
   border-radius: 2px;
   margin: 4px 0;
   transition: 0.3s;
