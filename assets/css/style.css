@@ -70,6 +70,7 @@ ul li {
   display: none;
   flex-direction: column;
   cursor: pointer;
+    margin-left: auto;
 }
 
 .hamburger span {
