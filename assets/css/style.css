@@ -605,6 +605,10 @@ footer {
     text-align: center;
 }
 
+  .container {
+  grid-template-columns: 1fr;
+}
+
 .forma-wrapper, .image-wrapper {
     flex-direction: column;
     padding: 1rem;
@@ -616,7 +620,7 @@ footer {
 }
 
 .btn_send {
-  width: 50%;
+  width: 90%;
   font-size: 0.7rem;
   margin: 0.5rem auto;
 
