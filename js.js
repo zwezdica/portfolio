@@ -56,7 +56,7 @@ const portfolioData = {
         description: "A simple memory game",
         image: "./assets/img/memory_game.png",
         links: [
-          { icon: "fa-solid fa-globe", text: "Live Demo", href: "#" },
+          { icon: "fa-solid fa-globe", text: "Live Demo", href: "https://memory.starworks.in.rs" },
           {
             icon: "fa-brands fa-github",
             text: "Code",
@@ -69,7 +69,7 @@ const portfolioData = {
         description: "Loto game",
         image: "./assets/img/loto.png",
         links: [
-          { icon: "fa-solid fa-globe", text: "Live Demo", href: "#" },
+          { icon: "fa-solid fa-globe", text: "Live Demo", href: "https://loto.starworks.in.rs" },
           {
             icon: "fa-brands fa-github",
             text: "Code",
