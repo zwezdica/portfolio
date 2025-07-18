@@ -43,7 +43,7 @@ const portfolioData = {
         description: "Movies finder",
         image: "./assets/img/cinequest_home.png",
         links: [
-          { icon: "fa-solid fa-globe", text: "Live Demo", href: "#" },
+          { icon: "fa-solid fa-globe", text: "Live Demo", href: "https://cinequest.starworks.in.rs" },
           {
             icon: "fa-brands fa-github",
             text: "Code",
